@@ -1,0 +1,154 @@
+body{
+    margin:0;
+    font-family: Microsoft JhengHei;
+    
+}
+
+/*-----header-----*/
+header {
+    min-height: 65px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header__container{
+    padding-top: 8px;
+    max-width: 1140px;
+}
+
+header:after{
+    content: "";
+    display: inline-block;
+    width: 100%;height: 8px;
+    position: absolute;    left: 0;    top: 0;    background: #0089d1;
+    background: linear-gradient(to right, #0089d1 5%,#01b6b2 95%);
+}
+
+.navbar{
+    font-size: 18px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.navbar__list{
+    justify-content: flex-end;
+}
+
+.navbar__btn{
+color: white;
+background: #FF9292;
+max-width: 97px;
+height: 37px;
+}
+
+.toggler__bordercolor{
+    color: none !important;
+}
+
+.toggler__border{
+outline-style: none;
+}
+
+
+@media screen and ( min-width: 992px) {
+    .navbar__btn{
+        order: 9;
+    }
+}
+
+@media screen and ( max-width:992px){
+    .nav__line{
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 520px) {
+    .nav__title{
+        display: none;
+    }
+}
+
+
+/*-----article-----*/
+
+article{
+    background: url('img/kv_bg.jpg') 0% 0% no-repeat padding-box;
+    border-bottom: 12px solid #ff7482;
+}
+
+.contanier__KV{
+    background-repeat: repeat;
+}
+
+/*----main----*/
+
+main{
+    background: url('img/Mask\ Group\ 11.png');
+}
+
+.time{
+    background: url('img/preface_bg.png') no-repeat;
+    height: 265px; /*記得刪*/
+}
+
+.activity{
+    max-width: 1048px;
+    height: 635px;
+    /* UI Properties */
+    background: #FFF8EB 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+}
+/*----footer----*/
+footer {
+    /*site */
+    top: auto;
+    width: 100%;
+    max-width: 1400px;
+    /* UI Properties */
+    background: #7C7C7C 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+}
+
+
+#nav_f{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px; 
+    justify-content: center;
+}
+
+#nav_f ul li{
+    float: left;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.li_border_f{
+    border-right: 2.25px solid #9B9B9B;
+}
+
+#nav_f ul li a {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    font: normal normal normal 18px/24px Microsoft JhengHei;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+#about {
+    margin: auto;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 14px/22px Microsoft JhengHei;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
