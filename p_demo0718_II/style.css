@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional');
+
+body {
+    margin: 0;
+    font-family: Han Sans TW;
+}
+
+/*-----header-----*/
+header {
+    min-height: 65px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header__container {
+    padding-top: 8px;
+    max-width: 1140px;
+}
+
+header:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0089d1;
+    background: linear-gradient(to right, #0089d1 5%, #01b6b2 95%);
+}
+
+.navbar {
+    font-size: 18px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.navbar__list {
+    justify-content: flex-end;
+}
+
+.navbar__btn {
+    color: white;
+    background: #FF9292;
+    max-width: 97px;
+    height: 37px;
+}
+
+.toggler__bordercolor {
+    color: none !important;
+}
+
+.toggler__border {
+    outline-style: none;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar__btn {
+        order: 9;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .nav__line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .nav__title {
+        display: none;
+    }
+}
+
+
+/*-----article-----*/
+
+article {
+    background: url('img/kv_bg.jpg') 0% 0% no-repeat padding-box;
+    border-bottom: 12px solid #ff7482;
+}
+
+.contanier__KV {
+    text-align: center;
+}
+
+/*----main----*/
+
+main {
+    background: url('img/Mask\ Group\ 11.png');
+}
+
+.time {
+    background: url('img/preface_bg.png') no-repeat;
+    background-size: auto 265px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 265px;
+}
+
+.time-content {
+    position: relative;
+    margin-left: 25%;
+}
+
+.flower-1 {
+    position: absolute;
+    left: -50px;
+    top: -10px;
+}
+
+.time-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    color: #333;
+}
+
+.time-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.45px;
+    color: #333;
+}
+
+.time-warning {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    color: #FF6F1B;
+}
+
+@media screen and (max-width:1390px) {
+    .time-content {
+        margin-left: 22%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .time-content {
+        margin-left: 17%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .time-content {
+        margin-left: 6%;
+    }
+
+    .time-text {
+        font-size: 16px;
+    }
+}
+
+
+/*禮物文章*/
+.gift {
+    max-width: 1048px;
+    padding: 60px 80px 40px;
+    /* UI Properties */
+    background: #FFF8EB 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    position: relative;
+}
+
+@media screen and (min-width:992px) {
+    .gift{
+        max-width: 1140px;
+    }
+}
+
+
+.tape1 {
+    /*練習兩種偽元素寫法*/
+    background: transparent url('img/Path 813.png');
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: -25px;
+    width: 148px;
+    height: 42px;
+}
+
+.tape2 {
+    /*練習兩種偽元素寫法*/
+    background: transparent url('img/Path 813.png');
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    width: 148px;
+    height: 42px;
+}
+
+.gift-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.gift-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.gift-ps{
+    font-size: 14px;
+    color: #FF6F1B;
+}
+
+a{
+    text-decoration: none;
+    color: #FF6F1B;
+    outline: none;
+}
+
+.sec1{
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    top: -25px;
+    width: 300px;
+    height: 40px;
+}
+
+.double {
+    position: relative;
+    border: 2px solid #FF6F1B;
+    border-radius: 19px;
+
+    font-family: Han Sans TC;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #4D4D4D;
+}
+
+.middle{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bold;
+    color: #4D4D4D;
+}
+
+.gift_group{
+    background-color: white;
+}
+
+.gift_group_pic{
+    width: 100%;
+}
+
+/*得獎名單*/
+.winner {
+    max-width: 1140px;
+}
+
+/*更新版本*/
+.update_vision {
+    max-width: 1140px;
+    text-align: end;
+    font-size: 16px;
+    color: #4d4d4d;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+/*----footer----*/
+footer {
+    width: 100%;
+    background: #7C7C7C 0% 0% no-repeat padding-box;
+}
+
+
+#nav_f {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+#nav_f ul li {
+    float: left;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.li_border_f {
+    border-right: 2.25px solid #9B9B9B;
+}
+
+#nav_f ul li a {
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    font: normal normal normal 18px/24px Microsoft JhengHei;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.about {
+    text-align: center;
+    font: normal normal normal 14px/22px Microsoft JhengHei;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
