@@ -83,6 +83,7 @@ article {
     text-align: center;
 }
 
+
 /*----main----*/
 
 main {
@@ -90,11 +91,21 @@ main {
 }
 
 .time {
-    background: url('img/preface_bg.png') no-repeat;
+    background:url('img/preface_bg.png') no-repeat;
     background-size: auto 265px;
     background-repeat: no-repeat;
     background-position: center top;
     height: 265px;
+}
+
+@media screen and (max-width:767px) {
+    .time {
+        height: auto;/*有繼承 概念需注意*/
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-bottom: 100px;
+        background-size: cover;
+    }
 }
 
 .time-content {
@@ -164,8 +175,22 @@ main {
     position: relative;
 }
 
+@media screen and (max-width:1200px) {
+    .gift {
+        padding: 60px 30px 40px;
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .gift {
+        padding: 60px 10px 40px;
+        max-width: 1140px;
+    }
+}
+
 @media screen and (min-width:992px) {
-    .gift{
+    .gift {
         max-width: 1140px;
     }
 }
@@ -207,18 +232,30 @@ main {
     color: #4D4D4D;
 }
 
-.gift-ps{
+.gift-ps {
     font-size: 14px;
     color: #FF6F1B;
 }
 
-a{
+.gift1_pic{
+    max-width:291px;
+    height: 234px;
+}
+
+@media screen and (max-width:400px) {
+    .gift1_pic{
+        max-width:275px;
+        height: 220px;
+    }
+}
+
+a {
     text-decoration: none;
     color: #FF6F1B;
     outline: none;
 }
 
-.sec1{
+.sec1 {
     position: absolute;
     left: 0;
     right: 0;
@@ -226,6 +263,14 @@ a{
     top: -25px;
     width: 300px;
     height: 40px;
+}
+
+@media screen and (max-width: 767px) { 
+    .sec1 {
+        top: -15px;
+        width: 225px;
+        height: 30px;
+    }
 }
 
 .double {
@@ -240,27 +285,133 @@ a{
     color: #4D4D4D;
 }
 
-.middle{
+.middle {
     display: block;
     text-align: center;
     font-size: 18px;
-    font-weight:bold;
+    font-weight: bold;
     color: #4D4D4D;
 }
 
-.gift_group{
+.gift_group {
     background-color: white;
 }
 
-.gift_group_pic{
+.gift_group_pic {
     width: 100%;
+}
+
+.card {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 28px;
+    max-width: 297px;
+    height: 310px;
+    border: 0;
+}
+
+.card-title {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.card-text {
+    display: block;
+    text-align: left;
+    font-family: Source Han Sans TW;
+    letter-spacing: 0.37px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.card-btn {
+    width: 223px;
+    height: 46px;
+    border: 0;
+    background: #FF9292 0% 0% no-repeat padding-box;
+    box-shadow: 4px 5px 2px #0000003D;
+    border-radius: 17px;
+    opacity: 1;
+}
+
+.btn-text{
+    display: block;
+    font-size: 18px;
 }
 
 /*得獎名單*/
 .winner {
     max-width: 1140px;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4D4D4D;
+    font-family: Han Sans TW;
 }
 
+@media screen and (max-width: 767px) { 
+    .winner{
+        font-size: 16px;
+    }
+}
+
+.prize-title{
+    font-size: 26px;
+}
+
+.prize-table{
+    font-weight:500;
+}
+
+table{
+    border-radius: 12px;
+    overflow: hidden;/*超出邊框的背景隱藏*/
+}
+
+th{
+    background-color: #FFF8EB;
+    padding: 15px 40px;
+}
+
+td{
+    background-color: white;
+    padding: 15px 40px;
+}
+@media screen and (max-width: 767px) { 
+    th{
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    td{
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    th{
+        padding: 15px 5px;
+    }
+    
+    td{
+        padding: 15px 5px;
+    }
+}
+
+.prize-link1{
+    word-break: break-all;
+}
+
+.prize-link2{
+    color: #690000;
+    word-break: break-all;
+}
 /*更新版本*/
 .update_vision {
     max-width: 1140px;
