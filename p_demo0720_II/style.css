@@ -83,6 +83,13 @@ header:after {
     color: #0089d1;
 }
 
+#btn1{
+    border-bottom: #0089d1 solid 5px;
+}
+
+#btn1_a{
+    color: #0098d1;
+}
 
 @media screen and (min-width: 992px) {
     .navbar__btn {
@@ -93,6 +100,14 @@ header:after {
 @media screen and (max-width:992px) {
     .nav__line {
         display: none;
+    }
+
+    #btn1{
+        border-bottom: white solid 5px;
+    }
+
+    .nav-itemlink:hover {
+        border-bottom: white solid 5px;
     }
 }
 
@@ -106,7 +121,7 @@ header:after {
 /*-----article-----*/
 
 article {
-    background: url('./img/kv_bg.jpg') 0% 0% no-repeat padding-box;
+    background: url('img/kv_bg.jpg') 0% 0% no-repeat padding-box;
     border-bottom: 12px solid #ff7482;
 }
 
@@ -118,11 +133,11 @@ article {
 /*----main----*/
 
 main {
-    background: url('./img/Mask\ Group\ 11.png');
+    background: url('img/Mask\ Group\ 11.png');
 }
 
 .time {
-    background: url('./img/preface_bg.png') no-repeat;
+    background: url('img/preface_bg.png') no-repeat;
     background-size: auto 265px;
     background-repeat: no-repeat;
     background-position: center top;
@@ -293,7 +308,7 @@ main {
 
 .tape1 {
     /*練習兩種偽元素寫法*/
-    background: transparent url('./img/Path 813.png');
+    background: transparent url('img/Path 813.png');
     position: absolute;
     z-index: 99;
     left: 0;
@@ -305,7 +320,7 @@ main {
 
 .tape2 {
     /*練習兩種偽元素寫法*/
-    background: transparent url('./img/Path 813.png');
+    background: transparent url('img/Path 813.png');
     position: absolute;
     z-index: 99;
     left: 50%;
